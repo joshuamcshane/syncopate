@@ -1,0 +1,53 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+#header {
+  background-color: #FFFFFF;
+  border-bottom: #ccc solid 1px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: fixed;
+  top: 0%%;
+  width: 100%;
+}
+#logo {
+  float: left;
+}
+#search {
+  float: right;
+}
+#login, #signup {
+  width: 300px;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #673AB7;
+  border-radius: 15px;
+  color: #fff;
+}
+fieldset {
+  border-style: none;
+}
+a {
+  text-decoration: none;
+  color: #673AB7;
+}
+a:hover {
+  color: #7E57C2;
+}
+#login input, #signup input, #search input {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc;
+  font-size: 14px;
+}
+#login legend, #signup legend {
+  text-align: center;
+  font-size: 24px;
+  padding-top: 15px;
+}
+p {
+  text-align: center;
+}
