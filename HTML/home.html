@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home</title>
+  <link href="./home.css" type="text/css" rel="stylesheet">
+    <link href="./player.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div id="logo">
+        <a href=""><img src="./syncopate_icon.png"></a>
+      </div>
+
+      <div id="links">
+        <ul id="links">
+          <li><a href="">Home</a></li>
+          <li><a href="">Collection</a></li>
+          <li><a href="">Upload</a></li>
+          <li><a href="">Profile</a></li>
+        </ul>
+      </div>
+
+      <div id="search">
+        <input type="text">
+        <!-- <input type="submit" name="search" value="Search"> -->
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="featured">
+      <ul id="albums">
+        <li>Item one</li>
+        <li>Item two</li>
+        <li>Item three</li>
+        <li>Item four</li>
+        <li>Item five</li>
+        <li>Item six</li>
+      </ul>
+    </div>
+
+    <div id="collection">Collection
+    </div>
+
+    <div id="playlists">Playlists
+    </div>
+
+    <div id="uploads">Uploads
+    </div>
+  </main>
+
+  <div id="audio_player">
+    <div id="audio_controls">
+      <button id="playpausebtn"></button>
+      <input id="seekslider" type="range" min="0" max="100" value="0" step="1">
+      <div id="timebox">
+        <span id="curtimetext">00:00</span> / <span id="durtimetext">00:00</span>
+      </div>
+      <button id="mutebtn"></button>
+      <input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
+    </div>
+  </div>
+
+</body>
+</html>

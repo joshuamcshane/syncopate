@@ -1,0 +1,78 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+header {
+  background-color: #FFFFFF;
+  border-color: #ccc;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  padding: 20px 10px 20px 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+#logo {
+  float: left;
+}
+#links {
+  margin: auto;
+}
+#links ul {
+  list-style-type: none;
+}
+#links li {
+  display: inline;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#links a {
+  text-decoration: none;
+}
+#search {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  bottom: 20px;
+  clear: right;
+}
+#search input {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #CCCCCC;
+  font-size: 14px;
+}
+main {
+  margin-top: 100px;
+  width: 1000px;
+  margin: 100px auto;
+}
+#featured ul#albums ,
+#featured ul#albums li {
+  margin: 0;
+  padding: 0;
+}
+#featured ul#albums li:nth-child(1) {
+  margin-left: 20px;
+}
+#featured ul#albums li {
+  display: inline-block;
+  width: 150px;
+  min-height: 150px;
+  background: #cccccc;
+}
+#collection, #playlists, #uploads {
+  width: 420px;
+  height: 175px;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  background: #CCCCCC;
+  float: left;
+}
+#uploads {
+  clear: left;
+}
