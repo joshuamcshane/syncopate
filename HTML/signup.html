@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+
+  <link href="../CSS/auth.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div id="logo">
+        <a href="./home.html"><img src="../images/syncopate_icon.png"></a>
+      </div>
+
+      <div id="search">
+        <input type="text">
+        <!-- <input type="submit" name="search" value="Search"> -->
+      </div>
+    </nav>
+  </header>
+
+  <form id="signup" action="" method="post">
+    <fieldset>
+      <legend>Sign Up</legend>
+      <p>
+        <label for="email">Email Address:<br></label>
+        <input id="email" type="text" name="email">
+      </p>
+      <p>
+        <label for="username">Username:<br></label>
+        <input id="username" type="text" name="username" required="required">
+      </p>
+      <p>
+        <label for="password">Password:</br></label>
+        <input id="password" type="password" name="password">
+      </p>
+      <p>
+        <label for="password_confirm">Confirm Password:</br></label>
+        <input id="password_confirm" type="password" name="password_confirm">
+      </p>
+      <p>
+        <input type="submit" name="login" value="Sign Up"</input>
+      </p>
+      <p>
+        <a href="./login.html">Log In</a>
+      </p>
+    </fieldset>
+  </form>
+
+</body>
+</html>
