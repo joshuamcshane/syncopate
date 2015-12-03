@@ -7,6 +7,13 @@ main {
   width: 1000px;
   margin: 100px auto;
 }
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #673AB7;
+  margin-left: 20px;
+  font-size: 24px;
+}
 #featured ul#albums ,
 #featured ul#albums li {
   margin: 0;
@@ -27,7 +34,7 @@ main {
   padding: 10px;
   margin: 20px;
   border-radius: 10px;
-  background: #CCCCCC;
+  background: #EDE7F6;
   float: left;
 }
 #uploads {
