@@ -1,7 +1,19 @@
 var audio = new Audio(), playbtn, mutebtn, seekslider, volumeslider, shufflebtn, replaybtn, skipbtn, seeking=false, seekto, curtimetext, durtimetext;
 
 
-var playlist = new Array('../audio/Trouble.mp3', '../audio/Something.mp3', '../audio/JumpmanRe.wav');
+var playlist = new Array( '../audio/Something.mp3', 
+'../audio/Photograph.mp3',
+'../audio/Letter Home.mp3',
+'../audio/Slow Ride.mp3',
+'../audio/Tricks.mp3',
+'../audio/Blank Space.mp3',
+'../audio/Flawless.mp3',
+'../audio/Hey Ya!.mp3',
+'../audio/Liquor Store Blues.mp3',
+'../audio/Take It All.mp3',
+'../audio/Tiptoe.mp3',
+'../audio/The Kids Dont Stand A Chance.mp3'
+);
 var k = 0;
 function initAudioPlayer(){
 	audio.src = playlist[k];
@@ -14,6 +26,7 @@ function initAudioPlayer(){
 	replaybtn = document.getElementById("replaybtn");
 	skipbtn = document.getElementById("skipbtn");
 	prevbtn = document.getElementById("prevbtn");
+	shufflebtn = document.getElementById("shufflebtn");
 	seekslider = document.getElementById("seekslider");
 	volumeslider = document.getElementById("volumeslider");
 	curtimetext = document.getElementById("curtimetext");
@@ -24,6 +37,7 @@ function initAudioPlayer(){
 	skipbtn.addEventListener("click", skip);
 	prevbtn.addEventListener("click", prev);
 	replaybtn.addEventListener("click", replay);
+	shufflebtn.addEventListener("click", shuffle);
 	seekslider.addEventListener("mousedown", function(event){ seeking=true; seek(event); });
 	seekslider.addEventListener("mousemove", function(event){ seek(event); });
 	seekslider.addEventListener("mouseup",function(){ seeking=false; });
@@ -49,7 +63,7 @@ function initAudioPlayer(){
 	    }
 	}
 	function skip(){
-		if (k>2){
+		if (k==k.length){
 			k=0;
 			audio.src = playlist[k];
 			audio.play();
@@ -74,6 +88,12 @@ function initAudioPlayer(){
 	}
 	function replay(){
 	audio.currentTime = 0;
+	}
+	
+	function shuffle(){
+	k = Math.floor((Math.random() * 12));
+	audio.src = playlist[k];
+	audio.play();
 	}
 	function seek(event){
 	    if(seeking){
