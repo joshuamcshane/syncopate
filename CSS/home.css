@@ -50,7 +50,7 @@ main {
   width: 1000px;
   margin: 100px auto;
 }
-#featured ul#albums ,
+#featured ul#albums,
 #featured ul#albums li {
   margin: 0;
   padding: 0;
@@ -82,7 +82,6 @@ main {
   width: 150px;
   height: 150px;
 }
-
 .text1{
   background: black ;
   text-align: center;
@@ -94,7 +93,24 @@ main {
   -moz-transition: opacity 0.6s;
   transition: opacity 0.6s;
 }
-
 .text1:hover{
   opacity: 0.8;
+}
+#collection ul, #playlists ul, #uploads ul {
+  margin: 0;
+  padding: 0;
+}
+#collection ul li, #playlists ul li, #uploads ul li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 150px;
+  min-height: 150px;
+  background: #cccccc;
+  float: left;
+}
+#collection ul li:nth-child(n+1),
+#playlists ul li:nth-child(n+1),
+#uploads ul li:nth-child(n+1) {
+  margin-right: -60px;
 }
